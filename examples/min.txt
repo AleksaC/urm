@@ -1,0 +1,18 @@
+# Calculate min(x, y, z)
+
+# Check if x is min
+1: J(1, 4, 6)
+# Check if y is min
+2: J(2, 4, 6)
+# Check if z is min
+3: J(3, 4, 6)
+
+# Increment min by 1, we start from 0 and increment by one until we reach one of x, y, z
+# Since we are working with natural numbers this is guaranteed to reach the minimum
+4: S(4)
+
+# Go to first instruction
+5: J(1, 1, 1)
+
+# Move result to first register
+6: T(1, 4)
