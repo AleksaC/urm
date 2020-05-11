@@ -39,8 +39,8 @@ cd urm
 make
 ./bin/release/simulator examples/min.txt 7 5 12
 ```
-This will clone the repo, generate `simulator` binary in `bin/release` and run a program
-that finds the minimum of 3 natural numbers (in this case 7, 3 and 12).
+This will clone the repo, generate `simulator` binary in `bin/release` and run a 
+program that finds the minimum of 3 natural numbers (in this case 7, 3 and 12). 
 
 To compile the project in `debug` mode run:
 ```shell script
@@ -51,7 +51,8 @@ You can also build and run the program with the following command:
 make run ARGS="path/to/your_program.txt initial_register_configuration"
 ```
 
-If you don't want to use make, the entire project can be compiled with the
+If you're on windows and want to use `make` you'll need to use `git bash`, 
+`msys` or `wsl`. Alternatively you can compile the entire project with the
 following command:
 ```shell script
 gcc -I ./include -O3 -std=c99 src/urm_simulator.c src/main.c -o bin/simulator
@@ -67,9 +68,6 @@ provided in the [examples directory](https://github.com/AleksaC/urm/tree/master/
 
 ## LICENSE️ ⚖️
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/AleksaC/urm/blob/master/LICENSE)
-
-## TODO 📝
-- [ ] Test on Windows
 
 ---
 

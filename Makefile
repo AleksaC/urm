@@ -1,5 +1,5 @@
 CC = gcc
-MKDIR = mkdir
+MKDIR = mkdir -p
 RMDIR = rm -rf
 CFLAGS = -Wall -std=c99
 
@@ -14,14 +14,6 @@ RELEASE_EXECUTABLE = $(RELEASE_DIR)/simulator
 DEBUG_DIR = ./bin/debug
 DEBUG_OBJECTS := $(SOURCES:$(SRC_DIR)/%.c=$(DEBUG_DIR)/%.o)
 DEBUG_EXECUTABLE = $(DEBUG_DIR)/simulator
-
-ifeq ($(OS),Windows_NT)
-	MKDIR += 2>NULL
-	DEBUG_EXECUTABLE := $(addsuffix .exe, $(DEBUG_EXECUTABLE))
-	RELEASE_EXECUTABLE := $(addsuffix .exe, $(RELEASE_EXECUTABLE))
-else
-	MKDIR += -p
-endif
 
 all: release
 
