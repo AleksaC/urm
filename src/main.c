@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
         printf("Something went wrong while reading the file %s\n", program_path);
         return 1;
     }
-    program[program_size] = '\0';
+    program[bytes_read] = '\0';
 
     fclose(program_source);
 
