@@ -352,5 +352,7 @@ int run(char *program, int *initial_registers, int num_initial_registers) {
 
     printf("Result: %d\n\n", registers[0]);
 
+    free(registers);
+
     return 0;
 }
