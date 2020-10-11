@@ -1,9 +1,8 @@
 # URM Simulator
 
 This repositroy contains [URM](https://proofwiki.org/wiki/Definition:Unlimited_Register_Machine)
-simulator written in C along with some example URM programs. This was built in
-collaboration with [Petar Vujović](https://github.com/petarvujovic98) as a
-homework for our computability theory class.
+simulator written in C along with some example URM programs. This was built as a
+homework for the computability theory class at my university.
 
 ## About 📖
 URM (Unlimited Register Machine) is an abstraction of computing device.
@@ -39,8 +38,8 @@ cd urm
 make
 ./bin/release/simulator examples/min.txt 7 5 12
 ```
-This will clone the repo, generate `simulator` binary in `bin/release` and run a 
-program that finds the minimum of 3 natural numbers (in this case 7, 3 and 12). 
+This will clone the repo, generate `simulator` binary in `bin/release` and run a
+program that finds the minimum of 3 natural numbers (in this case 7, 3 and 12).
 
 To compile the project in `debug` mode run:
 ```shell script
@@ -51,7 +50,7 @@ You can also build and run the program with the following command:
 make run ARGS="path/to/your_program.txt initial_register_configuration"
 ```
 
-If you're on windows and want to use `make` you'll need to use `git bash`, 
+If you're on windows and want to use `make` you'll need to use `git bash`,
 `msys` or `wsl`. Alternatively you can compile the entire project with the
 following command:
 ```shell script
@@ -69,7 +68,7 @@ provided in the [examples directory](https://github.com/AleksaC/urm/tree/master/
 ## LICENSE️ ⚖️
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/AleksaC/urm/blob/master/LICENSE)
 
----
-
-**Note**: This started as an attempt to write proper C, but due to lack of time we
-quickly had to give up on that and write working C instead.
+## Contact 🙋‍♂️
+- [Personal website](https://aleksac.me)
+- <a target="_blank" href="http://twitter.com/aleksa_c_"><img alt='Twitter followers' src="https://img.shields.io/twitter/follow/aleksa_c_.svg?style=social"></a>
+- aleksacukovic1@gmail.com
